@@ -27,7 +27,7 @@ public class Menu {
 // switch case statement to call methods
             switch (userChoice) {
                 case 1:
-                    Manager.manInput();
+                    man.manInput();
                     break;
                 case 2:
                     cash.cashInput();
@@ -44,6 +44,6 @@ public class Menu {
             System.out.println();
         } while (!quit);
         System.out.println("Visit again!");
-    }
+    }//end of ShowMenu()
 
-}
+}// end of class

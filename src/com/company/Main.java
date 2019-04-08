@@ -44,7 +44,8 @@ public class Main {
     public static void main(String[] args) {
 
         Menu stephen = new Menu();
-        stephen.ShowMenu();
+        stephen.showMenu();
 
-    }
-}
+    }//end of Main() Method
+
+}//End of Main{} class

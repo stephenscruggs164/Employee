@@ -7,19 +7,36 @@ public class Cashier extends Employee {
   double hourlyWage; // wage per hour
   double hoursWorked; // hours worked for week
     String employType;
-  //string type;
-        public void cashInput(){
-            System.out.println("Employee Name: " + getFirstName() + " " + getLastName());
-            System.out.println("Employee ID:   " + getEmployeeId());
+    Scanner in = new Scanner(System.in);
 
-            System.out.println("Enter employee wage:");
-            Scanner in = new Scanner(System.in);
-           // hourlyWage = in.nextLine();
+    //string type;
 
+    public void cashInput(){
+        System.out.print("Please enter first name: ");
+        setFirstName(in.nextLine());
 
-            }
-        }
-}
+        System.out.print("Please enter last name: ");
+        setLastName(in.nextLine());
+
+        System.out.print("Please enter Employee Id number: ");
+        setEmployeeId(in.nextInt());
+
+        System.out.print("Enter employee wage:");
+        hourlyWage = in.nextDouble();
+
+        System.out.print("Enter total hours worked: ");
+        hoursWorked = in.nextDouble();
+
+        System.out.println("Employee Name: " + getFirstName() + " " + getLastName());
+        System.out.println("Employee ID:   " + getEmployeeId());
+        System.out.println("Employee type: Cashier");
+        System.out.println("Employee wage: " + hourlyWage);
+        System.out.println("Total hours worked: " + hoursWorked);
+        System.out.println("Weekly pay:  " + (hoursWorked * hourlyWage));
+        }//end of cashInput
+
+}// end of Cashier{} class
+
 
 
 

@@ -23,7 +23,7 @@ public abstract class Employee {
         this.lastName = lastName;
     }
 
-    public double getEmployeeId() {
+    public int getEmployeeId() {
         return employeeId;
     }
 
